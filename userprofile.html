@@ -3,56 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="userprofile.css">
-    <title>My Profile</title>
+    <title>User Profile</title>
+    <link rel="stylesheet" href="userprofile.css"> <!-- Link to the CSS file -->
 </head>
 <body>
-    <div class="container">
-        <div class="main">
-            <!-- Top Navigation Bar -->
-            <div class="topbar d-flex justify-content-between align-items-center px-4">
-                <h2>My Profile</h2>
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Fitness Goals</a>
-                    <a href="#">Fitness History</a>
-                    <a href="#">Logout</a>
-                </nav>
-            </div>
-            
-            <!-- Profile Container -->
-            <div class="profile-container">
-                <div class="card profile-card text-center">
-                    <div class="card-body">
-                        <img src="user.png" class="rounded-circle shadow-lg profile-img">
-                        <h4 class="mt-3">Username</h4>
-                        <hr>
 
-                        <!-- Personal Info -->
-                        <div class="info">
-                            <p><strong>Full Name:</strong> Username</p>
-                            <p><strong>Email:</strong> abc@gmail.com</p>
-                            <p><strong>Phone:</strong> +0123458900</p>
-                            <p><strong>Address:</strong> Cairo, Egypt</p>
-                        </div>
+    <!-- Navigation Bar -->
+    <div class="topbar">
+        <h1>My Profile</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Fitness Goals</a>
+            <a href="#">Fitness History</a>
+            <a href="#">Logout</a>
+        </nav>
+    </div>
 
-                        <hr>
-
-                        <!-- Health Info -->
-                        <div class="health-info">
-                            <p><strong>Age:</strong> 25</p>
-                            <p><strong>Weight:</strong> 70 kg</p>
-                            <p><strong>Height:</strong> 175 cm</p>
-                            <p><strong>BMI:</strong> 22.9</p>
-                        </div>
-
-                        <button class="edit-btn">Edit Profile</button>
-                    </div>
-                </div>
+    <!-- Profile Section -->
+    <div class="profile-container">
+        <div class="profile-card">
+            <!-- Centered Profile Image -->
+            <div class="profile-img-container">
+                <img src="profile.png" alt="User Image" class="profile-img">
             </div>
 
+            <!-- User Info -->
+            <div class="info">
+                <p><strong>Full Name:</strong> Username</p>
+                <p><strong>Email:</strong> abc@gmail.com</p>
+                <p><strong>Phone:</strong> +0123458900</p>
+                <p><strong>Address:</strong> Cairo, Egypt</p>
+            </div>
+
+            <!-- Health Info -->
+            <div class="health-info">
+                <p><strong>Age:</strong> 25</p>
+                <p><strong>Weight:</strong> 70 kg</p>
+                <p><strong>Height:</strong> 170 cm</p>
+                <p><strong>BMI:</strong> 24.2</p>
+            </div>
+
+            <!-- Edit Button -->
+            <button class="edit-btn">Edit</button>
         </div>
     </div>
+
 </body>
 </html>
